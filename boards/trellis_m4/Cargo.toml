@@ -34,7 +34,6 @@ cortex-m-semihosting = "~0.3"
 cortex-m-rtfm = "~0.4"
 panic_rtt = "~0.2"
 smart-leds = { git = "https://github.com/smart-leds-rs/smart-leds" }
-smart-leds-trait = { git = "https://github.com/smart-leds-rs/smart-leds-trait" }
 ws2812-timer-delay = { git = "https://github.com/smart-leds-rs/ws2812-timer-delay-rs" }
 
 [features]
@@ -49,6 +48,7 @@ debug = true
 lto = false
 
 [profile.release]
-debug = true
+incremental = false
+debug = false
 lto = true
 opt-level = "s"
