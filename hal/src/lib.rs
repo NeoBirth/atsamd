@@ -72,6 +72,8 @@ pub mod pwm;
 pub mod pwm;
 
 pub mod delay;
+#[cfg(feature="unproven")]
+pub mod dmac;
 pub mod gpio;
 pub mod prelude;
 pub mod time;
